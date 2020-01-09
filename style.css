@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, 
+.navbar-light .navbar-nav .active > .nav-link, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.btn {
+    background: #ff2c00;
+    margin: 0 .6rem;
+}
+
+.regitration-header h1 {
+    font-weight: 600;
+}
+
+span.important {
+    color: #ff2c00;
+    font-size: 1.2rem;
+}
+
+.fn7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-control {
+    width: 25rem;
+}
+
+#regis-content {
+    margin: 7rem auto;
+}
+
+.fn76 {
+    color: red;
+    font-size: 1.1rem;
+
+}
+
+#fn78 {
+    color: #fff;
+}
+
+/* .candid-col {
+    /* box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+} */
+
+
+input .radio {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+input[type="radio" i] {
+    cursor: pointer;
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+
+input[type="radio"]:checked {
+    box-sizing: border-box;
+    padding: .3rem;
+    background-color: green;
+
+
+}
+
+
+
+.fn456 {
+    /* background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)); */
+    height: 100vh;
+    width: 100%;
+}
+
+.modal-1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    border-radius: 20%;
+}
+
+.modal2-content{
+    background-color: #f4f4f4;
+    margin: -70px auto;
+    position: relative;
+    top: 0;
+    padding: 2rem;
+    width: 30%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    /* Adding animation */
+    animation-name: modalOpen;
+    animation-duration: 1s;
+    
+}
+
+.modal2-content h6 {
+    font-size: 1.6rem;
+}
+
+#closeBtn,
+#closeSecondCandid {
+    font-size: 1.7rem;
+    color: #f4f4f4;
+    background: red;
+    padding: .4rem;
+    position: relative;
+    right: -20px;
+    top: -20px;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+/* span #closeSecondCandid {
+    font-size: 1.7rem;
+    color: #f4f4f4;
+    background: red;
+} */
+
+/* .fn400 {
+    margin-top: ;
+} */
+
+
+
+@keyframes modalOpen{
+    from {opacity: 0}
+    to {opacity: 1}
+}
