@@ -69,45 +69,10 @@ require_once('serverConnection.php');
                 </div>
             </div>
             <?php } ?>
+
             <div class="card-footer text-muted">
-                <a type="button" href="vote.php" class="btn btn-secondary">Cancel</a>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                YES
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title display-5" id="exampleModalLabel">SIGN YOUR BALLOT</h2>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p><strong>EMAIL: NOTIFICATION OF BALLOT CONFIRMATION</strong></p>
-                                <form action="" method="post">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1"><strong>Email Address</strong></label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                    </div>
-                                </form>
-                            <ul class="list-group mb-5 mt-4">
-                                <li class="list-group-item">Enter a valid Email address to Confirmation your Ballot</li>
-                                <li class="list-group-item">Your ballot will be unsucessfull without a valid Email</li>
-                            </ul>
-                        </div>
-                        <div class="modal-footer">
-                            <a type="button" href="vote.php" class="btn btn-secondary p-2" data-dismiss="modal">DISCARD BALLOT</a>
-                            <button type="button" class="btn btn-primary p-2">SUBMIT BALLOT</button>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-
+                <a type="button" href="vote.php" class="btn btn-secondary"> Cancel </a>
+                <a type="button" href="pop.php" class="btn btn-primary"> YES </a>
             </div>
         </div>
     </div>
