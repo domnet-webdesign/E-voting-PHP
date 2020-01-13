@@ -4,12 +4,40 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Catamaran', sans-serif; 
+}
+
 .navbar {
     padding: 1rem;
 }
 
+.navbar-brand {
+    font-family: 'Kumar One', cursive;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+a .navbar-brand:hover {
+    color: none;
+}
+
 .navbar-light .navbar-brand {
     color: #fff;
+}
+
+.main-banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('images/person-holding-white-envelope-1550334.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.main-banner h2 {
+    padding-top: 13%;
+    font-weight: bold;
+    /* font-size: 2.3rem; */
 }
 
 .navbar-light .navbar-nav .show > .nav-link, 
@@ -17,14 +45,19 @@
 .navbar-light .navbar-nav .nav-link.show, 
 .navbar-light .navbar-nav .nav-link.active {
     color: #fff;
+    font-size: 1rem;
+    padding: 1.2rem;
+    font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
+    font-size: 1rem;
+    padding: 1.2rem;
+    font-weight: bold;
 }
 
 .btn {
-    background: #ff2c00;
     margin: 0 .6rem;
 }
 
@@ -155,4 +188,67 @@ input[type="radio"]:checked {
 @keyframes modalOpen{
     from {opacity: 0}
     to {opacity: 1}
+}
+
+.center-box {
+    width: 100px;
+    height: 100px;
+    background: aqua;
+}
+
+.box {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.center-box .fas {
+    color: bisque;
+    line-height: 3;
+}
+
+#services {
+    background: #00587A;
+}
+
+#services h3 {
+    font-size: 2.4rem;
+    color: #fff;
+    padding: 2.5rem 0;
+}
+
+.card-text p {
+    font-size: 1.1rem;
+   
+}
+
+.footer {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('images/footer-celebration.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.footer .fn780 {
+    padding-top: 4.5rem;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.footer .fn609 {
+    color: #fff;
+    font-size: 1.6rem;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 30px;
+    font-weight: 600;
+    background: #05baff;
+}
+
+.footer-content {
+    color: white;
+    font-size: 1.2rem;
 }

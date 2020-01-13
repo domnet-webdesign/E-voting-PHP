@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         //validate email
         if (!empty($emailConfirm)) {
 
-            $sqlre = "INSERT INTO emailconfirm (email) VALUES ('$emailConfirm')";
+            $sqlre = "INSERT INTO emailconfirm (id, email) VALUES ('NULL', '$emailConfirm')";
             $query = mysqli_query($connection, $sqlre);
 
             if($query) {
@@ -28,7 +28,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             // mysqli_close($connection);
 
         }else {
-            echo "<script> alert('Email not added to the voting system') </script>";
+            echo "<script> alert('Email not added to the voting system.') </script>";
+            
                 die();
         }
 
@@ -52,7 +53,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <!-- Modal -->
     <div class="container">
         <div class="card-header mt-5 text-center">
@@ -68,7 +68,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                         <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                         <span class="fn76"> <?php echo $emailConfirmErr; ?> </span>
                     </div>
-                </form>
+                
                 <ul class="list-group mb-3 mt-4">
                     <li class="list-group-item">Enter a valid Email address to Confirmation your Ballot</li>
                     <li class="list-group-item">Your ballot will be unsucessfull without a valid Email</li>
@@ -76,9 +76,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <!-- <div class="card-footer text-center"> -->
             <a type="button" href="vote.php" class="btn btn-secondary p-2">DISCARD BALLOT</a>
-            <button type="submit" name="submit" class="btn btn-primary p-2">SUBMIT BALLOT</button>
+            <button type="submit" name="submit" onclick="voteCounter();" id="candidate1" class="btn btn-primary p-2">SUBMIT BALLOT</button>
         <!-- </div> -->
+            </form>
     </div>
+
+    
 
 
 
